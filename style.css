@@ -61,6 +61,7 @@ body {
 
 .sidebar {
     display: flex;
+    flex-shrink: 0;
     width: 450px;
     height: 100vh;
     background-image: url("./arun-clarke-5vLPyrbf5Tc-unsplash.jpg");
