@@ -46,3 +46,28 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/* Actual CSS starts here */
+
+div { 
+    /* For showing div dimensions without adding content */
+    box-sizing: border-box;
+    border: 2px solid rgb(88, 86, 86);
+}
+
+body {
+    display: flex;
+}
+
+.sidebar {
+    display: flex;
+    width: 450px;
+    height: 100vh;
+    background-image: url("./arun-clarke-5vLPyrbf5Tc-unsplash.jpg");
+    background-position-y: -150px;
+    background-size: 200%;
+}
+
+.main {
+    flex: 2;
+}
