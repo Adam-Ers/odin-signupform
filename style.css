@@ -49,24 +49,58 @@ table {
 
 /* Actual CSS starts here */
 
-div { 
-    /* For showing div dimensions without adding content */
-    box-sizing: border-box;
-    border: 2px solid rgb(88, 86, 86);
+@font-face {
+    font-family: 'Norse Bold';
+    src: url('./Norse-Bold.otf');
 }
 
 body {
     display: flex;
 }
 
+a {
+    text-decoration-line: underline;
+    color: white;
+}
+
+a:visited {
+    color: gray;
+}
+
 .sidebar {
     display: flex;
+    flex-direction: column;
     flex-shrink: 0;
-    width: 450px;
+    width: 550px;
+    min-height: 1024px;
     height: 100vh;
     background-image: url("./arun-clarke-5vLPyrbf5Tc-unsplash.jpg");
-    background-position-y: -150px;
-    background-size: 200%;
+    background-position-y: -400px;
+    background-size: 150vh;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 225px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 12px;
+    font-family: 'Norse Bold', sans-serif;
+    color: white;
+    font-size: 6rem;
+}
+
+.logoImage {
+    width: 100px;
+}
+
+.credit {
+    display: flex;
+    color: white;
+    margin-top: auto;
+    text-align: center;
+    align-self: center;
 }
 
 .main {
