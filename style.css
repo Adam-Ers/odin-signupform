@@ -193,7 +193,7 @@ a:visited {
 }
 
 .inputLabel {
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: 500;
     letter-spacing: 2px;
     color: #333333;
@@ -201,12 +201,30 @@ a:visited {
 }
 
 .inputBox {
+    --normal-color: #E5E7EB;
     border-width: 1px;
     border-style: solid;
-    border-color: #E5E7EB;
-    border-radius: 2px;
+    border-color: var(--normal-color);
+    border-radius: 4px;
     padding: 8px;
     width: 250px;
+}
+
+.inputBox:focus {
+    border-color: #1D4ED8;
+    box-shadow: 2px 2px 6px lightgray;
+    outline: none;
+}
+
+.error {
+    border-color: red;
+}
+
+#passwordError {
+    display: none;
+    font-size: 0.75rem;
+    margin-top: 2px;
+    color: red;
 }
 
 .createAccountButton {

@@ -32,31 +32,32 @@
                     <div class="row">
                         <div class="inputDiv">
                             <label class="inputLabel" for="firstName">FIRST NAME</label>
-                            <input class="inputBox" type="text" name="firstName" id="firstName">
+                            <input class="inputBox" type="text" name="firstName" id="firstName" required>
                         </div>
                         <div class="inputDiv">
                             <label class="inputLabel" for="lastName">LAST NAME</label>
-                            <input class="inputBox" type="text" name="lastName" id="lastName">
+                            <input class="inputBox" type="text" name="lastName" id="lastName" required>
                         </div>
                     </div>
                     <div class="row">
                         <div class="inputDiv">
                             <label class="inputLabel" for="email">EMAIL</label>
-                            <input class="inputBox" type="email" name="email" id="email">
+                            <input class="inputBox" type="email" name="email" id="email" required>
                         </div>
                         <div class="inputDiv">
                             <label class="inputLabel" for="phoneNumber">PHONE NUMBER</label>
-                            <input class="inputBox" type="text" name="phoneNumber" id="phoneNumber">
+                            <input class="inputBox" type="tel" name="phoneNumber" id="phoneNumber" required>
                         </div>
                     </div>
                     <div class="row">
                         <div class="inputDiv">
                             <label class="inputLabel" for="password">PASSWORD</label>
-                            <input class="inputBox" type="password" name="password" id="password">
+                            <input class="inputBox password" type="password" name="password" id="password" required>
+                            <p id="passwordError">* Passwords do not match</p>
                         </div>
                         <div class="inputDiv">
                             <label class="inputLabel" for="confirmPassword">CONFIRM PASSWORD</label>
-                            <input class="inputBox" type="password" name="confirmPassword" id="confirmPassword">
+                            <input class="inputBox password" type="password" name="confirmPassword" id="confirmPassword" required>
                         </div>
                     </div>
                 </div>
