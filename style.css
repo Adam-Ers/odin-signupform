@@ -54,8 +54,42 @@ table {
     src: url('./Norse-Bold.otf');
 }
 
-body {
+@font-face {
+    font-family: 'Roboto';
+    src: url('./Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('./Roboto-Bold.ttf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('./Roboto-Medium.ttf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('./Roboto-MediumItalic.ttf');
+    font-weight: 500;
+    font-style: italic;
+}
+
+body, html {
     display: flex;
+}
+
+body {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    background-color: #F9FAFB;
+}
+
+em {
+    font-style: italic;
 }
 
 a {
@@ -72,11 +106,12 @@ a:visited {
     flex-direction: column;
     flex-shrink: 0;
     width: 550px;
-    min-height: 1024px;
-    height: 100vh;
+    min-height: 100vh;
+    height: 100%;
+    /* height: 100vh; */
     background-image: url("./arun-clarke-5vLPyrbf5Tc-unsplash.jpg");
     background-position-y: -400px;
-    background-size: 150vh;
+    background-size: 250%;
 }
 
 .logo {
@@ -100,8 +135,61 @@ a:visited {
     margin-top: auto;
     text-align: center;
     align-self: center;
+    margin-bottom: 1px;
 }
 
 .main {
-    flex: 2;
+    flex: 1;
+    --left-offset: 50px;
+}
+
+.text {
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 120%;
+}
+
+.blurb {
+    margin-top: 75px;
+    width: 700px;
+    padding-left: var(--left-offset);
+}
+
+.form {
+    margin-top: 40px;
+}
+
+.inputSection {
+    height: 300px;
+    padding-left: var(--left-offset);
+    padding-top: 24px;
+    background-color: white;
+    box-shadow: 0px 3px 6px lightgray;
+}
+
+.createAccountButton {
+    margin-left: var(--left-offset);
+    margin-top: 40px;
+    background-color: #596D48;
+    color: white;
+    border: 0;
+    border-radius: 8px;
+    padding: 16px 60px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 1.1rem;
+    box-shadow: 2px 2px 4px lightgray;
+}
+
+.alreadyHaveAccount {
+    padding-left: var(--left-offset);
+    margin-top: 40px;
+    margin-bottom: 24px;
+    font-size: 1.1rem;
+}
+
+.alreadyHaveAccount a {
+    text-decoration: none;
+    color: #596D48;
+    font-weight: 700;
 }
